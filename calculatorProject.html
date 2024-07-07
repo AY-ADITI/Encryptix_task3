@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CALCULATOR PORJECT</title>
+            <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+            <div id="calculator">
+                <label for="display">Calculator Display</label>
+                <input type="text" id="display" readonly placeholder="0">
+                <div class="button-container">
+                    <button class="button" onclick=" currentDisplay = '';document.querySelector('#display').value = currentDisplay;" aria-label="Clear">c</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '1';document.querySelector('#display').value = currentDisplay;" aria-label="One">1</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '2';document.querySelector('#display').value = currentDisplay;" aria-label="Two">2</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '+';document.querySelector('#display').value = currentDisplay;" aria-label="Plus">+</button>
+            
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '3';document.querySelector('#display').value = currentDisplay;" aria-label="Three">3</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '4';document.querySelector('#display').value = currentDisplay;" aria-label="Four">4</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '-';document.querySelector('#display').value = currentDisplay;" aria-label="Minus">-</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '5';document.querySelector('#display').value = currentDisplay;" aria-label="Five">5</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '6';document.querySelector('#display').value = currentDisplay;" aria-label="Six">6</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '*';document.querySelector('#display').value = currentDisplay;" aria-label="Multiply">*</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '7';document.querySelector('#display').value = currentDisplay;" aria-label="Seven">7</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '8';document.querySelector('#display').value = currentDisplay;" aria-label="Eight">8</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '/';document.querySelector('#display').value = currentDisplay;" aria-label="Divide">/</button>
+
+                    <button class="button" onclick=" 
+                    let result=eval(currentDisplay);
+                    currentDisplay = result;document.querySelector('#display').value = currentDisplay;" aria-label="Equals">=</button>
+
+                    <button class="button" onclick=" 
+                    currentDisplay = currentDisplay + '9';document.querySelector('#display').value = currentDisplay;" aria-label="Nine">9</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '0';document.querySelector('#display').value = currentDisplay;" aria-label="Zero">0</button>
+
+                    <button class="button" onclick=" currentDisplay = currentDisplay + '.';document.querySelector('#display').value = currentDisplay;" aria-label="Decimal">.</button>
+            
+            
+                </div>
+            </div>
+
+            <script>
+                let currentDisplay='';
+
+                /* .value=is used for displaying the text*/
+                document.querySelector('#display').value= currentDisplay;
+            </script>
+</body>
+</html></html>
